@@ -48,10 +48,12 @@ gulp.task('serve', () => {
   })
 })
 
+gulp.task('icon-copy', () => gulp.src('src/favicon.ico').pipe(gulp.dest('dist')))
+gulp.task('ht-copy', () => gulp.src('src/.htaccess').pipe(gulp.dest('dist')))
 gulp.task('image-copy', () => gulp.src('src/img/*.{jpg,png,gif,svg}').pipe(gulp.dest('dist/img')))
 gulp.task('build-js-vendors', () => gulp.src(config.vendors.scripts).pipe(gulp.dest('dist/js')))
 gulp.task('build-css-vendors', () => gulp.src(config.vendors.styles).pipe(gulp.dest('dist/css')))
 
-gulp.task('default', ['watch', 'build-html', 'build-js', 'build-css', 'build-js-vendors', 'build-css-vendors', 'image-copy'])
+gulp.task('default', ['watch', 'build-html', 'build-js', 'build-css', 'build-js-vendors', 'build-css-vendors', 'image-copy', 'icon-copy', 'ht-copy'])
 gulp.task('server', ['serve', 'default'])
 
