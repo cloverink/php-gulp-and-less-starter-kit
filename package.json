@@ -5,7 +5,7 @@
   "main": " ",
   "scripts": {
     "build": "gulp",
-    "start": "gulp server"
+    "start": "docker-compose up"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  www:
+    image: php:7-apache
+    ports:
+      - 8000:80
+    volumes:
+      - ./dist:/var/www/html
