@@ -1,0 +1,36 @@
+{
+  "name": "scotchy",
+  "version": "1.0.1",
+  "description": "HTML & Less Starter Kit",
+  "main": " ",
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloverink/gulp-and-less-starter-kit.git"
+  },
+  "author": "Aran Chananar",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cleanhtml": "^1.0.3",
+    "gulp-concat": "^2.4.3",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-less": "^3.0.1",
+    "gulp-live-server": "^0.0.31",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1"
+  }
+}
